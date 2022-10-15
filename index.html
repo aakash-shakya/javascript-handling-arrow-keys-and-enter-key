@@ -20,12 +20,16 @@
 <body>
     <h1 style="text-align:center">Demo of handling Enter and arrow keys</h1>
     <br>
-    <div>
+    <div class="container">
+        <div>
+            <input id="rows" placeholder="Enter the number of rows" type="number">
+            <input id="columns" placeholder="Enter the number of columns" type="number">
+            <button onclick="buildTable()" class="btn btn-primary">submit</button>
+        </div>
+
         <table class="table table-striped table-bordered" id="dataTable">
             <tbody id="tableBody">
-                <input id="rows" placeholder="Enter the number of rows" type="number">
-                <input id="columns" placeholder="Enter the number of columns" type="number">
-                <button onclick="buildTable()">submit</button>
+
             </tbody>
         </table>
     </div>
