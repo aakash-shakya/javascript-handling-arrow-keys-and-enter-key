@@ -35,3 +35,4 @@ function handleEvent(event) {
         event.target.parentElement.nextSibling.childNodes[event.target.cellIndex].focus()
     }
 }
+

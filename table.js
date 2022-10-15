@@ -57,10 +57,3 @@ function validateTableParameters(rows, columns){
 
     return true;
 }
-
-// function validateTableParametersType(rows, columns){
-//     if (typeof(rows)==Number || typeof(columns)==Number ){
-//         return true;
-//     }
-//     return false;
-// }

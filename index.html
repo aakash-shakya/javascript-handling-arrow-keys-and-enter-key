@@ -29,11 +29,27 @@
         <br><br>
         <table class="table table-striped table-bordered" id="dataTable">
             <tbody id="tableBody">
-
             </tbody>
         </table>
     </div>
 
+
+    <script>
+
+        function buildTable() {
+            let [rows, columns] = tableParameters();
+
+            if (checkTablePresence) {
+                removeTable();
+            }
+
+            if (validateTableParameters(rows, columns)) {
+                createTable(rows, columns);
+            } else {
+                alert('Invalid table parameters');
+            }
+        }
+    </script>
 
 </body>
 
