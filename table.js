@@ -1,3 +1,22 @@
+
+function checkTablePresence(){
+    let tr_count = document.getElementsByTagName('tr').length;
+    if (tr_count===0){
+        return false;
+    }
+    return true;
+}
+
+function removeTable(){
+    if (checkTablePresence){
+        let tr = document.getElementsByTagName('tr');
+
+        // above tr is Nodelist, not an array
+        // needs to remove element one at a time
+        while(tr[0]) tr[0].parentNode.removeChild(tr[0])
+    }
+}
+
 function createTable(rows, columns) {
     // construct table from the values of rows and columns.
 
